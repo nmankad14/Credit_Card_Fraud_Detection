@@ -18,13 +18,16 @@ This project focuses on detecting fraudulent credit card transactions using mach
 - **Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib, Imbalanced-learn  
 - **Machine Learning Models:** Random Forest, Logistic Regression, XGBoost, Decision Tree
 
-## **Exploratory Data Analysis (EDA)**  
-Key findings from data visualization:  
-- Fraudulent transactions are more frequent at **night**.  
-- More fraud cases occur around the **22nd hour**.  
-- Middle-aged individuals experience a higher number of fraudulent transactions.  
-- Higher fraudulent transactions occur within **70-80 km distance**.  
-- Transaction amounts show a **skewed distribution**, with a few high-value transactions being fraudulent.  
+## **Exploratory Data Analysis (EDA) & Visualizations**
+To understand fraudulent transactions better, we performed various visualizations, leading to key insights:
+
+- Fraudulent transactions are more frequent at night, with a peak around 22:00 (10 PM).
+- Middle-aged individuals (30-60 years old) are more prone to fraudulent transactions, with a peak around 35-40 years old.
+- Fraudulent transactions tend to occur within distances of 70-80 km from the user's usual transaction location.
+- Transaction amounts show a skewed distribution, with most transactions involving small amounts, but high-value transactions are more likely to be fraudulent.
+- Fraud is more common on weekends, possibly due to reduced monitoring.
+
+These insights help in feature selection and improving the model’s ability to detect fraud.
 
 ## **Feature Engineering & Data Preprocessing**  
 - Encoding categorical variables using **Label Encoding**.  
